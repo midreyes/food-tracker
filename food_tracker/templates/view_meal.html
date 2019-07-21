@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<h1>View Meal Details</h1>
+		<h3>{{ meal.food.name }}</h3>
+
+		<table class="table table-sm table-bordered">
+			<tbody>
+				<tr>
+					<td>{{ 'Calories' }} </td>
+					<td>{{ meal.get_total_calories }} kcal</td>
+				</tr>
+				<tr>
+					<td>{{ 'Serving Size' }} </td>
+					<td>{{ meal.serving_size }} </td>
+				</tr>
+				<tr>
+					<td>{{ 'Total Fat' }} </td>
+					<td>{{ meal.get_total_fat }} g</td>
+				</tr>
+				<tr>
+					<td>{{ 'Saturated Fat' }} </td>
+					<td>{{ meal.get_total_saturated_fat }} g</td>
+				</tr>
+				<tr>
+					<td>{{ 'Cholesterol' }} </td>
+					<td>{{ meal.get_total_cholesterol }} mg</td>
+				</tr>
+				<tr>
+					<td>{{ 'Sodium' }} </td>
+					<td>{{ meal.get_total_sodium }} mg</td>
+				</tr>
+				<tr>
+					<td>{{ 'Total Carbohydrate' }} </td>
+					<td>{{ meal.get_total_carbohydrate }} g</td>
+				</tr>
+				<tr>
+					<td>{{ 'Dietary Fibre' }} </td>
+					<td>{{ meal.get_total_dietary_fibre }} g</td>
+				</tr>
+				<tr>
+					<td>{{ 'Sugar' }} </td>
+					<td>{{ meal.get_total_sugar }} g</td>
+				</tr>
+				<tr>
+					<td>{{ 'Protein' }} </td>
+					<td>{{ meal.get_total_protein }} g</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
